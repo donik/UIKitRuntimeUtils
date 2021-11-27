@@ -10,9 +10,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "6.0"
 
-  s.subspec 'ObjCRuntimeUtils' do |ru|
-    ru.dependency 'ObjCRuntimeUtils'
-  end
+  s.dependency 'ObjCRuntimeUtils'
 
   s.source       = { :git => "https://github.com/donik/UIKitRuntimeUtils.git", :tag => s.version }
   s.source_files  = "Source/**/*.{h,m,swift}"
