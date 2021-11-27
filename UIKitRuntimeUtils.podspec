@@ -9,10 +9,9 @@ Pod::Spec.new do |s|
   s.authors            = { "Daniyar Gabbassov" => "donik102@gmail.com" }
 
   s.ios.deployment_target = "6.0"
-  s.osx.deployment_target = "10.7"
 
   s.subspec 'ObjCRuntimeUtils' do |ru|
-    ru.dependency 'ObjCRuntimeUtils', :git => "https://github.com/donik/ObjCRuntimeUtils"
+    ru.dependency 'ObjCRuntimeUtils'
   end
 
   s.source       = { :git => "https://github.com/donik/UIKitRuntimeUtils.git", :tag => s.version }
