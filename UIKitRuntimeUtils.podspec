@@ -8,9 +8,10 @@ Pod::Spec.new do |s|
 
   s.authors            = { "Daniyar Gabbassov" => "donik102@gmail.com" }
 
-  s.ios.deployment_target = "6.0"
+  s.ios.deployment_target = "10.0"
 
   s.dependency 'ObjCRuntimeUtils'
+  s.dependency 'GDKAsyncDisplayKit'
 
   s.source       = { :git => "https://github.com/donik/UIKitRuntimeUtils.git", :tag => s.version }
   s.source_files  = "Source/**/*.{h,m,swift}"
